@@ -1,0 +1,106 @@
+$color-text: #FFFFFF;
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.body {
+    font-family: 'Montserrat';
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    background-image: url(./img/top.jpg);
+    background-repeat: none;
+    width: 1440px;
+    height: 1024px;
+
+    &__contant {
+        padding-top: 217px;
+        padding-left: 120px;
+
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: $color-text;
+        margin-right: 838px;
+        margin-top: 32px;
+    }
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: $color-text;
+    padding-right: 531px;
+}
+
+.button {
+    width: 234.06px;
+    height: 48.6px;
+    background: #9C0332;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-text;
+    margin-top: 44px;
+}
+
+.gamebox {
+    background-image: url(./img/gamebox.jpg);
+    position: absolute;
+    width: 1440px;
+    height: 556px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    &__content {
+        display: flex;
+        gap: 32px;
+        &_cart {
+            border-radius: 16px;
+            width: 378px;
+            height: 300px;
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+
+        &_cart1 {
+            background-image: url(./img/cart1.jpg);
+        }
+
+        &_cart2 {
+            background-image: url(./img/cart2.jpg);
+        }
+
+        &_cart3 {
+            background-image: url(./img/cart3.jpg);
+        }
+
+        &_name {
+            ont-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: $color-text;
+            margin-left: 32px;
+            margin-bottom: 32px;
+        }
+    }
+}

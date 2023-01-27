@@ -13,17 +13,31 @@ $color-text: #FFFFFF;
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
+.fattext{
+    font-weight: 600;
+}
 
 .top {
     background-image: url(./img/top.jpg);
-    background-repeat: none;
-    width: 1440px;
-    height: 1024px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 217px;
+    padding-left: 120px;
+    align-items: center;
+    justify-content: space-around;
 
     &__contant {
-        padding-top: 217px;
-        padding-left: 120px;
+       padding-bottom: 493px;
+    }
 
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: $color-text;
+        width: 700px;
     }
 
     &__text {
@@ -32,18 +46,9 @@ $color-text: #FFFFFF;
         font-size: 18px;
         line-height: 32px;
         color: $color-text;
-        margin-right: 838px;
+        width: 481px;
         margin-top: 32px;
     }
-}
-
-.title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 78px;
-    color: $color-text;
-    padding-right: 531px;
 }
 
 .button {
@@ -57,27 +62,39 @@ $color-text: #FFFFFF;
     line-height: 22px;
     color: $color-text;
     margin-top: 44px;
+    transition: all 0.3s;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 .gamebox {
     background-image: url(./img/gamebox.jpg);
-    position: absolute;
-    width: 1440px;
-    height: 556px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 128px;
     padding-bottom: 128px;
     display: flex;
     flex-direction: column-reverse;
+    justify-content: space-around;
 
     &__content {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         gap: 32px;
+
         &_cart {
             border-radius: 16px;
             width: 378px;
             height: 300px;
             display: flex;
             flex-direction: column-reverse;
+            transition: all 0.3s;
+            &:hover{
+                transform: scale(1.1);
+            }
 
         }
 
@@ -94,7 +111,7 @@ $color-text: #FFFFFF;
         }
 
         &_name {
-            ont-style: normal;
+            font-style: normal;
             font-weight: 600;
             font-size: 24px;
             line-height: 32px;
@@ -104,3 +121,4 @@ $color-text: #FFFFFF;
         }
     }
 }
+@import 'mobile';

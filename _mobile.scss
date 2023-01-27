@@ -1,0 +1,41 @@
+@media(max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        padding-top: 238px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            align-items: center;
+            text-align: center;
+            color: aqua;
+            width: 343px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+        }
+
+        &__contant {
+            padding-bottom: 238px;
+        }
+    }
+
+    .gamebox {
+        &__content {
+            &_cart {
+                width: 343px;
+                height: 300px;
+            }
+        }
+    }
+    }

@@ -12,15 +12,30 @@
   padding-right: calc(50% - 600px);
 }
 
+.fattext {
+  font-weight: 600;
+}
+
 .top {
   background-image: url(./img/top.jpg);
-  background-repeat: none;
-  width: 1440px;
-  height: 1024px;
-}
-.top__contant {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 217px;
   padding-left: 120px;
+  align-items: center;
+  justify-content: space-around;
+}
+.top__contant {
+  padding-bottom: 493px;
+}
+.top__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #FFFFFF;
+  width: 700px;
 }
 .top__text {
   font-style: normal;
@@ -28,17 +43,8 @@
   font-size: 18px;
   line-height: 32px;
   color: #FFFFFF;
-  margin-right: 838px;
+  width: 481px;
   margin-top: 32px;
-}
-
-.title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 78px;
-  color: #FFFFFF;
-  padding-right: 531px;
 }
 
 .button {
@@ -52,20 +58,27 @@
   line-height: 22px;
   color: #FFFFFF;
   margin-top: 44px;
+  transition: all 0.3s;
+}
+.button:hover {
+  transform: scale(1.1);
 }
 
 .gamebox {
   background-image: url(./img/gamebox.jpg);
-  position: absolute;
-  width: 1440px;
-  height: 556px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 128px;
   padding-bottom: 128px;
   display: flex;
   flex-direction: column-reverse;
+  justify-content: space-around;
 }
 .gamebox__content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 32px;
 }
 .gamebox__content_cart {
@@ -74,6 +87,10 @@
   height: 300px;
   display: flex;
   flex-direction: column-reverse;
+  transition: all 0.3s;
+}
+.gamebox__content_cart:hover {
+  transform: scale(1.1);
 }
 .gamebox__content_cart1 {
   background-image: url(./img/cart1.jpg);
@@ -85,11 +102,44 @@
   background-image: url(./img/cart3.jpg);
 }
 .gamebox__content_name {
-  ont-style: normal;
+  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   color: #FFFFFF;
   margin-left: 32px;
   margin-bottom: 32px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding-top: 238px;
+  }
+  .top__title {
+    font-size: 32px;
+    line-height: 39px;
+    align-items: center;
+    text-align: center;
+    color: aqua;
+    width: 343px;
+  }
+  .top__text {
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+  }
+  .top__contant {
+    padding-bottom: 238px;
+  }
+  .gamebox__content_cart {
+    width: 343px;
+    height: 300px;
+  }
 }/*# sourceMappingURL=style1.css.map */

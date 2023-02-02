@@ -1,0 +1,39 @@
+.seasons {
+    background-color: #000915;
+    background-size: cover;
+
+    &__box {
+        padding-bottom: 282px;
+        padding-left: 120px;
+        padding-top: 234px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+&__left{
+    display: grid;
+    gap: 32px;
+    padding-bottom: 64px;
+}
+&__right{
+}
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: $color-text;
+    }
+    &__text{
+        ont-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        width: 584px;
+        color: $color-text;
+    }
+    &__pictire{
+        width: 485px;
+height: 333px;
+left: 839px;
+    }
+}

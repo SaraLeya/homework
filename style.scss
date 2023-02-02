@@ -29,6 +29,7 @@ $color-text: #FFFFFF;
 
     &__contant {
        padding-bottom: 493px;
+       
     }
 
     &__title {
@@ -48,6 +49,7 @@ $color-text: #FFFFFF;
         color: $color-text;
         width: 481px;
         margin-top: 32px;
+        margin-bottom: 44px;
     }
 }
 
@@ -61,7 +63,6 @@ $color-text: #FFFFFF;
     font-size: 18px;
     line-height: 22px;
     color: $color-text;
-    margin-top: 44px;
     transition: all 0.3s;
     &:hover{
         transform: scale(1.1);
@@ -121,4 +122,5 @@ $color-text: #FFFFFF;
         }
     }
 }
+@import 'seasons';
 @import 'mobile';

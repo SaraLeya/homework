@@ -23,6 +23,7 @@
             font-size: 14px;
             line-height: 22px;
             width: 343px;
+           
         }
 
         &__contant {
@@ -38,4 +39,46 @@
             }
         }
     }
+
+    .seasons {
+        &__box {
+            padding-bottom: 85px;
+            padding-left: none;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__left {
+            align-items: center;
+            padding-top: 51px;
+            padding-bottom: none;
+            display: grid;
+            gap: 32px;
+        }
+
+        &__right {
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+        }
+
+        &__pictire {
+            width: 344px;
+            height: 236px;
+        }
     }
+    .button{
+        align-items: center;
+    }
+}

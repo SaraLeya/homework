@@ -45,6 +45,7 @@
   color: #FFFFFF;
   width: 481px;
   margin-top: 32px;
+  margin-bottom: 44px;
 }
 
 .button {
@@ -57,7 +58,6 @@
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
-  margin-top: 44px;
   transition: all 0.3s;
 }
 .button:hover {
@@ -111,6 +111,43 @@
   margin-bottom: 32px;
 }
 
+.seasons {
+  background-color: #000915;
+  background-size: cover;
+}
+.seasons__box {
+  padding-bottom: 282px;
+  padding-left: 120px;
+  padding-top: 234px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.seasons__left {
+  display: grid;
+  gap: 32px;
+  padding-bottom: 64px;
+}
+.seasons__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.seasons__text {
+  ont-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  width: 584px;
+  color: #FFFFFF;
+}
+.seasons__pictire {
+  width: 485px;
+  height: 333px;
+  left: 839px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -142,4 +179,36 @@
     width: 343px;
     height: 300px;
   }
-}/*# sourceMappingURL=style1.css.map */
+  .seasons__box {
+    padding-bottom: 85px;
+    padding-left: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .seasons__left {
+    align-items: center;
+    padding-top: 51px;
+    padding-bottom: none;
+    display: grid;
+    gap: 32px;
+  }
+  .seasons__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .seasons__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+  }
+  .seasons__pictire {
+    width: 344px;
+    height: 236px;
+  }
+  .button {
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
